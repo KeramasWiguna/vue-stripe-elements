@@ -1,5 +1,8 @@
 import './lib'
-import { Stripe, baseStyle } from './stripeElements'
+import {
+  Stripe,
+  baseStyle
+} from './stripeElements'
 import StripeLoader from './StripeLoader'
 import StripeElement from './StripeElement'
 import Card from './Card'
@@ -17,16 +20,43 @@ module.exports = {
   StripeElement,
   StripeLoader,
   baseStyle,
-  get instance() { return Stripe.instance },
-  get createToken() { return Stripe.createToken },
-  get createSource() { return Stripe.createSource },
-  get retrieveSource() { return Stripe.retrieveSource },
-  get paymentRequest() { return Stripe.paymentRequest },
-  get redirectToCheckout() { return Stripe.redirectToCheckout },
-  get retrievePaymentIntent() { return Stripe.retrievePaymentIntent },
-  get handleCardPayment() { return Stripe.handleCardPayment },
-  get handleCardSetup() { return Stripe.handleCardSetup },
-  get handleCardAction() { return Stripe.handleCardAction },
-  get confirmPaymentIntent() { return Stripe.confirmPaymentIntent },
-  get createPaymentMethod() { return Stripe.createPaymentMethod }
+  get instance() {
+    return Stripe.instance
+  },
+  get createToken() {
+    return Stripe.createToken
+  },
+  get createSource() {
+    return Stripe.createSource
+  },
+  get retrieveSource() {
+    return Stripe.retrieveSource
+  },
+  get paymentRequest() {
+    return Stripe.paymentRequest
+  },
+  get redirectToCheckout() {
+    return Stripe.redirectToCheckout
+  },
+  get retrievePaymentIntent() {
+    return Stripe.retrievePaymentIntent
+  },
+  get handleCardPayment() {
+    return Stripe.handleCardPayment
+  },
+  get handleCardSetup() {
+    return Stripe.handleCardSetup
+  },
+  get handleCardAction() {
+    return Stripe.handleCardAction
+  },
+  get confirmCardPayment() {
+    return Stripe.confirmCardPayment
+  },
+  get confirmPaymentIntent() {
+    return Stripe.confirmPaymentIntent
+  },
+  get createPaymentMethod() {
+    return Stripe.createPaymentMethod
+  }
 }
